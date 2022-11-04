@@ -59,14 +59,14 @@ export default {
         const index = this.friends.indexOf(friend)
         index === 0 ? this.friends.shift() : this.friends.splice(index, index)
     },
-    addContact(name, phone, email, save){
+    addContact(name, phone, email, reset){
         const friend = {
             name: name,
             phone: phone,
             email: email
         }
         this.friends.push(friend)
-        save()
+        reset()
     }
   },
 };
