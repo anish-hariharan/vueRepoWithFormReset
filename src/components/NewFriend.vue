@@ -30,7 +30,7 @@ export default {
         }
     },
     methods: {
-        hello(){
+        reset(){
             this.enteredName = "",
             this.enteredPhone = "",
             this.enteredMail = ""
@@ -41,7 +41,7 @@ export default {
                 this.enteredName,
                 this.enteredPhone,
                 this.enteredMail,
-                this.hello()
+                this.reset()
             )
         }
     },
